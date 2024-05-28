@@ -1,0 +1,69 @@
+/* Estilos generales del contenedor del carrusel */
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilo del contenedor de las tarjetas */
+.card-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 20px;
+}
+
+/* Estilo de los botones */
+.buttons-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center; /* Alinea los botones verticalmente */
+  width: 100%;
+  margin-top: 20px; /* Espacio entre las tarjetas y los botones */
+}
+
+.button-style {
+  padding: 10px 20px;
+  margin: 0 10px; /* Espacio entre los botones */
+  background-color: #A50044; /* Color de fondo magenta */
+  color: white; /* Color de texto blanco */
+  font-size: 16px; /* Tamaño de fuente reducido */
+  font-weight: bold; /* Peso de la fuente */
+  border-radius: 10px; /* Bordes redondeados */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Cursor tipo puntero */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.button-style:hover {
+  background-color: #810033; /* Color de fondo al pasar el ratón, un tono más oscuro */
+}
+
+/* Estilos adicionales para las tarjetas, si se usa en el mismo archivo CSS */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #181733;
+  margin: 10px;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-bottom: 10px;
+}

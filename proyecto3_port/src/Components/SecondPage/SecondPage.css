@@ -1,0 +1,86 @@
+.second-page-wrapper {
+    padding: 20px;
+}
+
+.second-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.second-page-title {
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 2px;
+    background-color: #A50044;
+    margin: 0 auto 20px auto;
+}
+
+.second-page-description {
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.get-to-know-me, .my-skills {
+    flex: 1;
+}
+
+.get-to-know-me h2, .my-skills h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fdc52c;
+}
+
+.get-to-know-me p, .my-skills p {
+    font-size: 1em;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+.get-to-know-me .link, .my-skills .link {
+    color: #A50044;
+    text-decoration: none;
+}
+
+.get-to-know-me .link:hover, .my-skills .link:hover {
+    text-decoration: underline;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* SecondPage.css */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+

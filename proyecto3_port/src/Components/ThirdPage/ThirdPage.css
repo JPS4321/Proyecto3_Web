@@ -1,0 +1,41 @@
+.third-page-wrapper {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.third-page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.third-page-title {
+    color: #181733;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.third-underline {
+    width: 50px;
+    height: 2px;
+    background-color: #A50044;
+    margin: 0 auto 20px auto;
+}
+
+.third-page-description {
+    font-size: 1em;
+    color: #181733;
+}
+
+/* ThirdPage.css */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
