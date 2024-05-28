@@ -49,7 +49,7 @@ const ThirdPage = () => {
                 </p>
             </div>
             <div className="projects-section">
-                <Carousel cards={cardsData} /> {/* El carrusel se mantiene sin efectos de fade */}
+                <Carousel cards={cardsData} /> 
             </div>
         </div>
     );

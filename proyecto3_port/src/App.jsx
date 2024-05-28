@@ -9,18 +9,18 @@ import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [showNavbar, setShowNavbar] = useState(false);  // Nuevo estado para controlar la visibilidad del Navbar
+  const [showNavbar, setShowNavbar] = useState(false);  
 
   useEffect(() => {
-    // Timer para controlar la carga de los componentes tras el Suspense
+    
     const timer = setTimeout(() => {
       setLoading(false);
     }, 4000);
 
-    // Timer específico para el Navbar
+    
     const navbarTimer = setTimeout(() => {
       setShowNavbar(true);
-    }, 4000); // Ajusta a 4 segundos como en tu lógica original
+    }, 4000); 
 
     return () => {
       clearTimeout(timer);
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      {showNavbar && <Navbar />}  // Renderiza Navbar solo después de 4 segundos
+      {showNavbar && <Navbar />}  
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         {!loading && (

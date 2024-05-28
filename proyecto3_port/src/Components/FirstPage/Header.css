@@ -12,18 +12,18 @@
 }
 
 .header h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the text on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
-    border-right: .15em solid #181733; /* The typewriter cursor */
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    border-right: .15em solid #181733;
     margin-top: 100px;
     font-size: 60px;
     margin-bottom: 0.5em;
     color: #181733;
     padding-bottom: 20px;
         animation: 
-            typing 1.5s steps(40, end) forwards, /* Typing animation with cursor */
-            blink-caret-stop 0.3s step-end forwards 1.5s; /* Cursor fades out immediately after typing */
+            typing 1.5s steps(40, end) forwards,
+            blink-caret-stop 0.3s step-end forwards 1.5s;
 }
 
 @keyframes typing {
@@ -33,22 +33,22 @@
 
 @keyframes blink-caret-stop {
     from { border-right-color: #181733; }
-    to { border-right-color: transparent; } /* Fades the cursor to transparent */
+    to { border-right-color: transparent; }
 }
 
 .header-description {
     font-size: 40px;
     color: #181733;
-    border-right: .15em solid #181733; /* Cursor de la máquina de escribir */
+    border-right: .15em solid #181733;
     padding: 0;
     margin: 0;
-    white-space: nowrap; /* Mantén el texto en una sola línea */
-    overflow: hidden; /* Oculta el texto que se extiende más allá del ancho inicial */
-    width: 0; /* Comienza con ancho cero */
-    opacity: 0; /* Inicia completamente invisible */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
     
-    animation: typing 1.5s steps(30, end) forwards 1.5s, /* Anima la escritura después del título */
-             blink-caret 0.75s step-end infinite; /* Anima el parpadeo del cursor */
+    animation: typing 1.5s steps(30, end) forwards 1.5s,
+             blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -57,7 +57,7 @@
         opacity: 1;
     }
     to {
-        width: 100%; /* Extiende el ancho al completo del contenedor padre */
+        width: 100%;
         opacity: 1;
     }
 }
@@ -74,7 +74,7 @@
 }
 
 .projects-button {
-    display: inline-block; /* or block, if you prefer */
+    display: inline-block;
     font-size: 20px;
     font-weight: bold;
     color: white;

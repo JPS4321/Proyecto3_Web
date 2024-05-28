@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Carousel.css';
-import Card from '../Card/Card'; // Importa tus componentes correctamente
+import Card from '../Card/Card'; 
 
 const Carousel = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

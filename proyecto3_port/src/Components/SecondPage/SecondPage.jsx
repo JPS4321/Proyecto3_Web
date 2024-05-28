@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './SecondPage.css';
 
 const SecondPage = () => {
-    // Estados para manejar la visibilidad de cada elemento
+    
     const [isVisibleTitle, setIsVisibleTitle] = useState(false);
     const [isVisibleGetToKnowMe, setIsVisibleGetToKnowMe] = useState(false);
     const [isVisibleMySkills, setIsVisibleMySkills] = useState(false);
@@ -10,20 +10,20 @@ const SecondPage = () => {
     useEffect(() => {
         const onScroll = () => {
             const scrollPosition = window.scrollY + window.innerHeight;
-            // Posiciones de cada elemento para iniciar la animación cuando sean visibles en la pantalla
+            
             const titlePosition = document.getElementById("about-me-title").offsetTop;
             const getToKnowMePosition = document.getElementById("get-to-know-me").offsetTop;
             const mySkillsPosition = document.getElementById("my-skills").offsetTop;
     
-            // Control de visibilidad para el título
+            
             if (scrollPosition > titlePosition) {
                 setIsVisibleTitle(true);
             }
-            // Control de visibilidad para la sección Get to Know Me
+            
             if (scrollPosition > getToKnowMePosition) {
                 setIsVisibleGetToKnowMe(true);
             }
-            // Control de visibilidad para la sección My Skills
+            
             if (scrollPosition > mySkillsPosition) {
                 setIsVisibleMySkills(true);
             }

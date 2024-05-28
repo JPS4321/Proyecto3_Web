@@ -3,8 +3,8 @@ import './FourthPage.css';
 
 const FourthPage = () => {
     const handleSubmit = (event) => {
-        event.preventDefault(); // Esto previene el comportamiento de envío predeterminado del formulario
-        alert("Correo enviado"); // Muestra la alerta al usuario
+        event.preventDefault(); 
+        alert("Correo enviado"); 
     };
 
     return (
