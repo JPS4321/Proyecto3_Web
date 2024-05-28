@@ -59,4 +59,3 @@ Si deseas contribuir a este proyecto, por favor realiza un fork y envía un pull
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
-```
